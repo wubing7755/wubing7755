@@ -7,21 +7,31 @@ I'm a **Blazor Full-Stack Developer** passionate about building modern web appli
 
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
-    <strong>💻 CExpression-Calculator</strong> <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" alt="C" height="18">
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">An expression calculator written in C language</p>
+    <strong>💻 CExpression-Calculator</strong> 
+    <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" alt="C" height="18" style="vertical-align: middle;" />
+    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
+      An expression calculator written in C language
+    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
-    <p style="margin: 0; font-size: 14px; color: #495057;">🔗 <a href="https://github.com/wubing7755/CExpression-Calculator" style="color: #007ACC; text-decoration: none;">View on GitHub →</a></p>
+    <p style="margin: 0; font-size: 14px; color: #495057;">
+      🔗 <a href="https://github.com/wubing7755/CExpression-Calculator" style="color: #007ACC; text-decoration: none;">View on GitHub →</a>
+    </p>
   </div>
 </details>
 
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
-    <strong>💻 AWComponent</strong> <img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=c%23&logoColor=white" alt="C#" height="18">
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">A collection of reusable components for Blazor applications</p>
+    <strong>💻 AWComponent</strong> 
+    <img src="https://img.shields.io/badge/C%23-239120?style=flat&logo=c%23&logoColor=white" alt="C#" height="18" style="vertical-align: middle;" />
+    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
+      A collection of reusable components for Blazor applications
+    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
-    <p style="margin: 0; font-size: 14px; color: #495057;">🔗 <a href="https://github.com/wubing7755/AWComponent" style="color: #007ACC; text-decoration: none;">View on GitHub →</a></p>
+    <p style="margin: 0; font-size: 14px; color: #495057;">
+      🔗 <a href="https://github.com/wubing7755/AWComponent" style="color: #007ACC; text-decoration: none;">View on GitHub →</a>
+    </p>
   </div>
 </details>
 
@@ -30,10 +40,14 @@ I'm a **Blazor Full-Stack Developer** passionate about building modern web appli
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
     <strong>📄 Log Middleware</strong>
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">Introduction to logging middleware in ASP.NET Core</p>
+    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
+      Introduction to logging middleware in ASP.NET Core
+    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
-    <p style="margin: 0; font-size: 14px; color: #495057;">🔗 <a href="https://www.cnblogs.com/wubing7755/p/18879791" style="color: #007ACC; text-decoration: none;">View on CNBlogs →</a></p>
+    <p style="margin: 0; font-size: 14px; color: #495057;">
+      🔗 <a href="https://www.cnblogs.com/wubing7755/p/18879791" style="color: #007ACC; text-decoration: none;">View on CNBlogs →</a>
+    </p>
   </div>
 </details>
 
