@@ -85,9 +85,6 @@ I'm a **Blazor Full-Stack Developer** passionate about building modern web appli
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
     <strong>📄 通过日志中间件查看Blazor WASM静态资源加载顺序</strong>
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
-
-    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
     <p style="margin: 0; font-size: 14px; color: #495057;">
@@ -99,9 +96,6 @@ I'm a **Blazor Full-Stack Developer** passionate about building modern web appli
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
     <strong>📄 Blazor组件通信</strong>
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
-
-    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
     <p style="margin: 0; font-size: 14px; color: #495057;">
@@ -113,9 +107,6 @@ I'm a **Blazor Full-Stack Developer** passionate about building modern web appli
 <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
     <strong>📄 OpenXML与Word概述</strong>
-    <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
-
-    </p>
   </summary>
   <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
     <p style="margin: 0; font-size: 14px; color: #495057;">
