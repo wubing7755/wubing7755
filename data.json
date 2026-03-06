@@ -7,13 +7,57 @@
     "github": "https://github.com/wubing7755"
   },
   "tech_stack": [
-    {"name": "C", "color": "00599C", "logo": "c"},
-    {"name": "C#", "color": "239120", "logo": "c%23"},
-    {"name": "Python", "color": "3776AB", "logo": "python"},
-    {"name": "TypeScript", "color": "3178C6", "logo": "typescript"},
-    {"name": "Blazor", "color": "512BD4", "logo": "dotnet"}
+    {
+      "name": "C",
+      "color": "00599C",
+      "logo": "c"
+    },
+    {
+      "name": "C#",
+      "color": "239120",
+      "logo": "c%23"
+    },
+    {
+      "name": "Python",
+      "color": "3776AB",
+      "logo": "python"
+    },
+    {
+      "name": "TypeScript",
+      "color": "3178C6",
+      "logo": "typescript"
+    },
+    {
+      "name": "Blazor",
+      "color": "512BD4",
+      "logo": "dotnet"
+    }
   ],
   "projects": [
+    {
+      "name": "AWComponent",
+      "description": "A collection of reusable components for Blazor applications",
+      "url": "https://github.com/wubing7755/AWComponent",
+      "language": "C#",
+      "language_color": "239120",
+      "language_logo": "c%23"
+    },
+    {
+      "name": "AWTemplate",
+      "description": "A blank template project related to Blazor WebAssembly",
+      "url": "https://github.com/wubing7755/AWTemplate.git",
+      "language": "C#",
+      "language_color": "239120",
+      "language_logo": "c%23"
+    },
+    {
+      "name": "AWDiagram",
+      "description": "A Diagram using AWTemplate and AWComponent",
+      "url": "https://github.com/wubing7755/AWDiagram.git",
+      "language": "C#",
+      "language_color": "239120",
+      "language_logo": "c%23"
+    },
     {
       "name": "CExpression-Calculator",
       "description": "An expression calculator written in C language",
@@ -23,19 +67,29 @@
       "language_logo": "c"
     },
     {
-      "name": "AWComponent",
-      "description": "A collection of reusable components for Blazor applications",
-      "url": "https://github.com/wubing7755/AWComponent",
-      "language": "C#",
-      "language_color": "239120",
-      "language_logo": "c%23"
+      "name": "GLDiagram",
+      "description": "An OpenGL-based Drawing Canvas ",
+      "url": "https://github.com/wubing7755/GLDiagram.git",
+      "language": "C",
+      "language_color": "00599C",
+      "language_logo": "c"
     }
   ],
   "blogs": [
     {
-      "title": "Log Middleware",
-      "description": "Introduction to logging middleware in ASP.NET Core",
+      "title": "通过日志中间件查看Blazor WASM静态资源加载顺序",
+      "description": "",
       "url": "https://www.cnblogs.com/wubing7755/p/18879791"
+    },
+    {
+      "title": "Blazor组件通信",
+      "description": "",
+      "url": "https://www.cnblogs.com/wubing7755/p/18586144"
+    },
+    {
+      "title": "OpenXML与Word概述",
+      "description": "",
+      "url": "https://www.cnblogs.com/wubing7755/p/18609219"
     }
   ]
 }
