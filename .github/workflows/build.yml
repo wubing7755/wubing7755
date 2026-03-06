@@ -5,32 +5,31 @@ on:
     branches:
       - main
     paths:
-      - 'data.json'
+      - "data.json"
+      - "generate_readme.py"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-          
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          
+          python-version: "3.x"
+
       - name: Generate README
-        run: |
-          python generate_readme.py
-          
-      - name: Commit and push
+        run: python generate_readme.py
+
+      - name: Commit and push if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "docs: Auto-update README from data.json"
-          file_pattern: "README.md"
+          commit_message: "docs: auto-update README [skip ci]"
+          file_pattern: README.md
