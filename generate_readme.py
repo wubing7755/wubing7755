@@ -137,15 +137,20 @@ def render_projects(projects: List[Project]) -> List[str]:
 
 
 def render_blog(blog: Blog) -> str:
+    if blog.description and blog.description.strip():
+        description_html = f"""
+        <p style="margin: 0 0 10px 0; font-size: 14px; color: #6c757d;">
+          {blog.description.strip()}
+        </p>"""
+    else:
+        description_html = None
+
     html_template = f"""
     <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
       <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
         <strong>📄 {blog.title}</strong>
-        <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
-          {blog.description}
-        </p>
       </summary>
-      <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
+      <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">{description_html or ''}
         <p style="margin: 0; font-size: 14px; color: #495057;">
           🔗 <a href="{blog.url}" style="color: #007ACC; text-decoration: none;">View on CNBlogs →</a>
         </p>
