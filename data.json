@@ -1,0 +1,41 @@
+{
+  "profile": {
+    "name": "wubing7755",
+    "title": "Blazor Full-Stack Developer",
+    "email": "wubing7755@gmail.com",
+    "blog": "https://www.cnblogs.com/wubing7755",
+    "github": "https://github.com/wubing7755"
+  },
+  "tech_stack": [
+    {"name": "C", "color": "00599C", "logo": "c"},
+    {"name": "C#", "color": "239120", "logo": "c%23"},
+    {"name": "Python", "color": "3776AB", "logo": "python"},
+    {"name": "TypeScript", "color": "3178C6", "logo": "typescript"},
+    {"name": "Blazor", "color": "512BD4", "logo": "dotnet"}
+  ],
+  "projects": [
+    {
+      "name": "CExpression-Calculator",
+      "description": "An expression calculator written in C language",
+      "url": "https://github.com/wubing7755/CExpression-Calculator",
+      "language": "C",
+      "language_color": "00599C",
+      "language_logo": "c"
+    },
+    {
+      "name": "AWComponent",
+      "description": "A collection of reusable components for Blazor applications",
+      "url": "https://github.com/wubing7755/AWComponent",
+      "language": "C#",
+      "language_color": "239120",
+      "language_logo": "c%23"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Log Middleware",
+      "description": "Introduction to logging middleware in ASP.NET Core",
+      "url": "https://www.cnblogs.com/wubing7755/p/18879791"
+    }
+  ]
+}
