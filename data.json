@@ -33,56 +33,18 @@
       "logo": "dotnet"
     }
   ],
-  "projects": [
-    {
-      "name": "AWComponent",
-      "description": "A collection of reusable components for Blazor applications",
-      "url": "https://github.com/wubing7755/AWComponent",
-      "language": "C#",
-      "language_color": "239120",
-      "language_logo": "c%23"
-    },
-    {
-      "name": "AWTemplate",
-      "description": "A blank template project related to Blazor WebAssembly",
-      "url": "https://github.com/wubing7755/AWTemplate.git",
-      "language": "C#",
-      "language_color": "239120",
-      "language_logo": "c%23"
-    },
-    {
-      "name": "AWDiagram",
-      "description": "A Diagram using AWTemplate and AWComponent",
-      "url": "https://github.com/wubing7755/AWDiagram.git",
-      "language": "C#",
-      "language_color": "239120",
-      "language_logo": "c%23"
-    },
-    {
-      "name": "CExpression-Calculator",
-      "description": "An expression calculator written in C language",
-      "url": "https://github.com/wubing7755/CExpression-Calculator",
-      "language": "C",
-      "language_color": "00599C",
-      "language_logo": "c"
-    },
-    {
-      "name": "GLDiagram",
-      "description": "An OpenGL-based Drawing Canvas ",
-      "url": "https://github.com/wubing7755/GLDiagram.git",
-      "language": "C",
-      "language_color": "00599C",
-      "language_logo": "c"
-    }
-  ],
   "blogs": [
+    {
+      "title": "Blazor组件通信",
+      "url": "https://www.cnblogs.com/wubing7755/p/18586144"
+    },
     {
       "title": "通过日志中间件查看Blazor WASM静态资源加载顺序",
       "url": "https://www.cnblogs.com/wubing7755/p/18879791"
     },
     {
-      "title": "Blazor组件通信",
-      "url": "https://www.cnblogs.com/wubing7755/p/18586144"
+      "title": "正则表达式的基本用法",
+      "url": "https://www.cnblogs.com/wubing7755/p/18699526"
     },
     {
       "title": "OpenXML与Word概述",
