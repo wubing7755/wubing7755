@@ -74,7 +74,6 @@ class Project:
 @dataclass
 class Blog:
     title: str
-    description: str
     url: str
 
 
@@ -109,20 +108,17 @@ def render_project(project: Project) -> str:
     )
     
     html_template = f"""
-    <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
-      <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
-        <strong>💻 {project.name}</strong> 
-        <img src="{badge_url}" alt="{project.language}" height="18" style="vertical-align: middle;" />
-        <p style="margin: 4px 0 0 0; font-size: 14px; color: #6c757d;">
+    <a href="{project.url}" style="text-decoration: none; flex: 1;">
+      <div style="margin: 8px 0; padding: 16px; height: 120px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; box-sizing: border-box; overflow: hidden;">
+        <div style="display: flex; align-items: center; justify-content: space-between; height: 30px;">
+          <strong style="color: #fff; font-size: 16px;">💻 {project.name}</strong>
+          <img src="{badge_url}" alt="{project.language}" height="18" style="vertical-align: middle;" />
+        </div>
+        <p style="margin: 12px 0 0 0; font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.5; height: 50px; overflow: hidden;">
           {project.description}
         </p>
-      </summary>
-      <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">
-        <p style="margin: 0; font-size: 14px; color: #495057;">
-          🔗 <a href="{project.url}" style="color: #007ACC; text-decoration: none;">View on GitHub →</a>
-        </p>
       </div>
-    </details>
+    </a>
     """
 
     return textwrap.dedent(html_template).strip()
@@ -130,42 +126,51 @@ def render_project(project: Project) -> str:
 
 def render_projects(projects: List[Project]) -> List[str]:
     md = ["## 🚀 Featured Projects", ""]
-    for project in projects:
-        md.append(render_project(project))
+    
+    # 每2个项目为一组，实现两列布局
+    for i in range(0, len(projects), 2):
+        row_projects = projects[i:i+2]
+        md.append('<div style="display: flex; gap: 16px;">')
+        
+        for project in row_projects:
+            md.append(render_project(project))
+        
+        md.append('</div>')
         md.append("")
+    
     return md
 
 
-def render_blog(blog: Blog) -> str:
-    if blog.description and blog.description.strip():
-        description_html = f"""
-        <p style="margin: 0 0 10px 0; font-size: 14px; color: #6c757d;">
-          {blog.description.strip()}
-        </p>"""
-    else:
-        description_html = None
-
+def render_blog_item(blog: Blog) -> str:
     html_template = f"""
-    <details style="display: block; margin: 8px 0; background: linear-gradient(90deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
-      <summary style="padding: 12px 16px; cursor: pointer; color: #333; list-style: none;">
+    <li style="margin: 8px 0;">
+      <a href="{blog.url}" style="text-decoration: none; color: #333; font-size: 15px; display: block; padding: 12px 16px; background: #f8f9fa; border-radius: 8px; border: 1px solid #dee2e6; transition: background 0.2s;">
         <strong>📄 {blog.title}</strong>
-      </summary>
-      <div style="padding: 12px 16px; border-top: 1px solid #dee2e6; background: #f1f3f5;">{description_html or ''}
-        <p style="margin: 0; font-size: 14px; color: #495057;">
-          🔗 <a href="{blog.url}" style="color: #007ACC; text-decoration: none;">View on CNBlogs →</a>
-        </p>
-      </div>
-    </details>
+      </a>
+    </li>
     """
-    
     return textwrap.dedent(html_template).strip()
 
 
 def render_blogs(blogs: List[Blog]) -> List[str]:
     md = ["## 📝 Latest Blog Posts", ""]
+    
+    # 构建博客列表项
+    blog_items = []
     for blog in blogs:
-        md.append(render_blog(blog))
-        md.append("")
+        blog_items.append(render_blog_item(blog))
+    
+    # 包装在卡片容器中
+    html_template = f"""
+    <div style="margin: 16px 0; padding: 16px; background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); border-radius: 12px; border: 1px solid #dee2e6;">
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        {"".join(blog_items)}
+      </ul>
+    </div>
+    """
+    
+    md.append(textwrap.dedent(html_template).strip())
+    md.append("")
     return md
 
 
@@ -211,7 +216,7 @@ def main() -> None:
     data = load_data(DATA_FILE)
 
     md: List[str] = []
-
+    
     md += render_header(data.profile)
     md += render_projects(data.projects)
     md += render_blogs(data.blogs)

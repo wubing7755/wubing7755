@@ -78,17 +78,14 @@
   "blogs": [
     {
       "title": "通过日志中间件查看Blazor WASM静态资源加载顺序",
-      "description": "",
       "url": "https://www.cnblogs.com/wubing7755/p/18879791"
     },
     {
       "title": "Blazor组件通信",
-      "description": "",
       "url": "https://www.cnblogs.com/wubing7755/p/18586144"
     },
     {
       "title": "OpenXML与Word概述",
-      "description": "",
       "url": "https://www.cnblogs.com/wubing7755/p/18609219"
     }
   ]
